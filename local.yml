@@ -1,16 +1,14 @@
+---
+- name: Local Apt Ansible
+  hosts: localhost
   connection: local
   become: true
-  
   tasks:
-   - name: apt install wget
+   - name: apt install multiple packages
      apt:
-      name: wget
+      name:
+       - mergerfs
+       - neofetch
       state: present
-   - name: apt install curl
-     apt:
-      name: curl
-      state: present  
-   - name: apt  install htop
-     apt: 
-      name: htop
-      state: present
+   - include: docker.yml
+
