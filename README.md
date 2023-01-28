@@ -33,6 +33,10 @@ git commit -m "first commit"
 git push origin main
 ```
 
+
+reference: 
+- https://thesmarthomejourney.com/2021/09/06/home-server-basics-ansible/
+
 Run the ansible playbook
 ```
 ansible-playbook local.yml
