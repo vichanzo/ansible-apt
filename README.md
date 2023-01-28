@@ -44,3 +44,7 @@ ansible-playbook local.yml
 
 #### Reference: 
 - https://thesmarthomejourney.com/2021/09/06/home-server-basics-ansible/
+- [github rbq/docker.yaml](https://gist.github.com/rbq/886587980894e98b23d0eee2a1d84933)
+- [perfectmediaserver.com](https://perfectmediaserver.com/installation/manual-install-ubuntu/)
+
+
