@@ -11,4 +11,5 @@
        - neofetch
       state: present
    - include: docker.yml
+   - include: samba.yml
 
