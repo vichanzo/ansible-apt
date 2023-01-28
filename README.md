@@ -1,3 +1,5 @@
+### Readme
+
 This is my version of Locally run Ansible for apt based installs.
 
 First install the basics:
@@ -34,10 +36,11 @@ git push origin main
 ```
 
 
-reference: 
-- https://thesmarthomejourney.com/2021/09/06/home-server-basics-ansible/
-
 Run the ansible playbook
 ```
 ansible-playbook local.yml
 ```
+
+
+#### Reference: 
+- https://thesmarthomejourney.com/2021/09/06/home-server-basics-ansible/
