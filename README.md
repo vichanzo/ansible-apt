@@ -25,3 +25,15 @@ Clone this repository:
 git clone git@github.com:vichanzo/ansible-apt.git
 ```
 
+Create a file with "nano test-commit.txt" then push it to git.
+```
+git status
+git add test-commit.txt
+git commit -m "first commit"
+git push origin main
+```
+
+Run the ansible playbook
+```
+ansible-playbook local.yml
+```
