@@ -1,0 +1,19 @@
+- name: Install automatic-ripping-machine Docker
+  docker_container:
+   name: ARM-rip
+   ports:
+    - 8080:8080
+   env: 
+    PUID: "1003"
+    GUID: "1003"
+    TZ: "America/Los_Angeles"
+   restart_policy: always
+   volumes:
+    -/home/arm:/home/arm
+    -/home/arm/music:/home/arm/Music
+    -/home/arm/logs:/home/arm/logs
+    -/home/arm/media:/home/arm/media
+    -/home/arm/config:/etc/arm/config
+   device:
+    - /dev/sr0:/dev/sr0
+   image: automaticrippingmachine/automatic-ripping-machine

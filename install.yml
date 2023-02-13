@@ -1,0 +1,17 @@
+---
+- name: Local Apt Ansible
+  hosts: localhost
+  connection: local
+  become: true
+  tasks:
+   - name: apt install multiple packages
+     apt:
+      name:
+#       - mergerfs
+#       - neofetch
+       - tmux
+#       - htop
+      state: present
+#   - include: docker.yml
+#   - include: samba.yml
+   - include: containers.yml
